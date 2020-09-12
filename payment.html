@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Payment Method</h1>
+      <form action="./thank-you.html">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="row items-product">
+                <div class="col-sm-2">
+                  <img class="product-image" id="productImage1" src="https://www.toysrus.com.sg/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dwfeac89d7/d/a/0/0/da000922b739b0f594b2f7ef837589ea9b1f9322_117415_i1.jpg?sw=394&sh=394">
+                </div>
+                <div class="col-sm-5">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <b>LEGO Architecture Dubai 21052</b> by LEGO
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      Gender Unisex
+                    </div>
+                    <div class="col-sm-6">
+                      Age 13+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">In Stock</div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <label for="productQuantity1" class="col-form-label">Quantity</label>
+                  <div id="productQuantity1">1</div>
+                  
+                </div>
+                <div class="col-sm-2">
+                  <label for="productPrice1" class="col-form-label">Price (THB)</label>
+                  <div id="productPrice1">$99.99</div>
+                </div>
+            </div>
+            <div class="row items-product">
+              <div class="col-sm-2">
+                <img class="product-image" id="productImage2" src="https://www.toysrus.com.sg/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dw13bea196/4/a/5/a/4a5ae12be68e3a692a21eba86b4ac2574149fb5c_89696_i1.png?sw=394&sh=394">
+              </div>
+              <div class="col-sm-5">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <b>Play-Doh Kitchen Creations Spinning</b> by Play-Doh
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    Gender Unisex
+                  </div>
+                  <div class="col-sm-6">
+                    Age 3+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">In Stock</div>
+                </div>
+                
+              </div>
+              <div class="col-sm-2">
+                <label for="productQuantity2" class="col-form-label">Quantity</label>
+                <div id="productQuantity2">1</div>
+              </div>
+              <div class="col-sm-2">
+                <label for="productPrice" class="col-form-label">Price (THB)</label>
+                <div id="productPrice">$29.99</div>
+              </div>
+            </div>
+            <div style="display: flex;"><div>Shipping Method:</div><div id="shippingMethod">Kerry Express</div></div>
+          </div>
+          <div class="col-sm-4">
+            <h2>Order Summary</h2>
+            <div class="text-justify"><div>Items</div><div id="items">(2)</div>:<div id="subtotaPrice">200.00 THB</div></div>
+            <div class="text-justify"><div>Shipping Fee:</div><div id="subtotalShippingFee">150.00 THB</div></div>  
+            <h2 class="order-total">
+            <div class="text-justify"><div>Order total:</div><div id="subtotalShippingFee">350.00 THB</div></div>
+            </h2>
+          </div>
+
+          <div class="col-sm-12 payment-method">
+            <h3>Select Payment method</h3>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="paymentMethod" id="credit" value="credit">
+              <label class="form-check-label" for="credit">
+                Credit or Debit Card
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
+              <label class="form-check-label" for="paypal">
+                Paypal
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="paymentMethod" id="linePay" value="linePay">
+              <label class="form-check-label" for="linePay">
+                Line Pay
+              </label>
+            </div>
+          </div>
+          
+          
+          
+          
+        </div>
+        <div class="row justify-content-sm-end">
+          <div class="col-sm-4 ">
+            <button type="submit" id="placeOrder" class="btn btn-primary btn-block btn-custom">Place your order</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

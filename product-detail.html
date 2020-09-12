@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LEGO Architecture Dubai 21052</h1>
+      <form class="row" action="./shopping-cart.html">
+        <div class="col-md-3 col-sm-12">
+          <img class="product-image" id="productImage" src="https://www.toysrus.com.sg/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dwfeac89d7/d/a/0/0/da000922b739b0f594b2f7ef837589ea9b1f9322_117415_i1.jpg?sw=394&sh=394">
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <div class="row">
+            <label for="productBrand" class="col-sm-3 col-form-label">Brand</label>
+            <div id="productBrand" class="col-sm-3 col-form-label">LEGO</div>
+          </div>
+          <div class="row">
+            <label for="productGender" class="col-sm-3 col-form-label">Gender</label>
+            <div id="productGender" class="col-sm-3 col-form-label">UNISEX</div>
+          </div>
+          <div class="row">
+            <label for="productAge" class="col-sm-3 col-form-label">Age</label>
+            <div id="productAge" class="col-sm-3 col-form-label">13+</div>
+          </div>
+          <div class="row">
+            <label for="productPeice" class="col-sm-3 col-form-label">Price</label>
+            <div id="productPeice" class="col-sm-3 col-form-label">$99.99</div>
+          </div>
+          <div class="row">
+            <label for="shippingMethod" class="col-sm-3 col-form-label">Shipping Method</label>
+            <div id="shippingMethod" class="col-sm-3 col-form-label">Cash on Delivery</div>
+          </div>
+          <div class="row">
+            <div id="productStatusStock" class="col-sm-6 col-form-label status-stock">In Stock</div>
+          </div>
+          <div class="row">
+            <label for="productQuantity" class="col-sm-3 col-form-label">Quantity</label>
+            <div class="col-sm-3">
+              <select id="productQuantity" class="form-control">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <button type="submit" id="addToCart" class="btn btn-primary btn-block btn-custom">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
